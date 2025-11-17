@@ -1,0 +1,173 @@
+# ============================================
+# ENTORNOS VIRTUALES
+# ============================================
+venv/
+env/
+ENV/
+.venv/
+
+
+# ============================================
+# PYTHON
+# ============================================
+# Archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+# ============================================
+# IDE Y EDITORES
+# ============================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+
+# ============================================
+# DATASETS (GRANDES)
+# ============================================
+# Datasets originales (muy pesados para git)
+data/raw/
+data/train/
+data/valid/
+data/test/
+
+# Mantener estructura pero ignorar contenido
+datasets/images/train/*
+datasets/images/val/*
+datasets/images/test/*
+datasets/labels/train/*
+datasets/labels/val/*
+datasets/labels/test/*
+
+# Excepción: Mantener carpetas vacías
+!datasets/images/train/.gitkeep
+!datasets/images/val/.gitkeep
+!datasets/images/test/.gitkeep
+!datasets/labels/train/.gitkeep
+!datasets/labels/val/.gitkeep
+!datasets/labels/test/.gitkeep
+
+# Videos de prueba (pueden ser grandes)
+data/test_videos/*.mp4
+data/test_videos/*.avi
+data/test_videos/*.mov
+
+
+
+
+# ============================================
+# MODELOS ENTRENADOS (PESADOS)
+# ============================================
+# Modelos de YOLO
+runs/
+models/
+*.pt
+*.pth
+*.weights
+
+# Excepción: Mantener el mejor modelo
+!runs/detect/train10/weights/best.pt
+
+# Otros formatos de modelos
+*.h5
+*.onnx
+*.tflite
+
+
+# ============================================
+# RESULTADOS Y SALIDAS
+# ============================================
+# Carpeta de resultados (videos analizados, imágenes procesadas)
+results/analyzed_videos/*.mp4
+results/annotated_images/*.jpg
+results/annotated_images/*.png
+
+# Logs
+*.log
+logs/
+
+# Reportes generados
+reports/*.pdf
+reports/*.html
+
+
+# ============================================
+# ARCHIVOS TEMPORALES
+# ============================================
+# Archivos temporales de Python
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Cache
+.cache/
+*.cache
+
+
+# ============================================
+# CONFIGURACIÓN Y SECRETOS
+# ============================================
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Bases de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Credenciales
+credentials.json
+secrets.yaml
+
+
+# ============================================
+# STREAMLIT
+# ============================================
+.streamlit/secrets.toml
+
+
+# ============================================
+# ARCHIVOS DEL SISTEMA
+# ============================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+

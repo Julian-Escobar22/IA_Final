@@ -1,14 +1,10 @@
-# Dataset: Construction-PPE
-# Descarga automática desde Ultralytics
+# Construction PPE Dataset Configuration
+path: D:/Universidad/ProyectoFinal_IA/Proyecto Final/Proyecto Final/datasets
+train: images/train
+val: images/val
+test: images/test
 
-path: ../datasets/construction-ppe  # ruta relativa al dataset
-train: images/train  # ruta a imágenes de entrenamiento
-val: images/val      # ruta a imágenes de validación
-test: images/test    # ruta a imágenes de prueba (opcional)
-
-# Clases
-nc: 11  # número de clases
-
+nc: 11
 names:
   0: helmet
   1: gloves

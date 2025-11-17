@@ -1,0 +1,12 @@
+ultralytics
+torch
+torchvision
+torchaudio
+opencv-python
+pillow
+numpy
+pandas
+matplotlib
+jupyter
+streamlit
+plotly
