@@ -75,22 +75,25 @@ data/test_videos/*.avi
 data/test_videos/*.mov
 
 
-
-
 # ============================================
-# MODELOS ENTRENADOS (PESADOS)
+# MODELOS ENTRENADOS - SOLO INCLUIR TRAIN10/WEIGHTS/BEST.PT
 # ============================================
-# Modelos de YOLO
-runs/
-models/
-*.pt
-*.pth
-*.weights
+# Ignorar CONTENIDO de runs (no la carpeta misma)
+runs/*
 
-# Excepción: Mantener el mejor modelo
+# Permitir la estructura de carpetas hasta train10/weights/
+!runs/detect/
+runs/detect/*
+!runs/detect/train10/
+runs/detect/train10/*
+!runs/detect/train10/weights/
+runs/detect/train10/weights/*
 !runs/detect/train10/weights/best.pt
 
-# Otros formatos de modelos
+# Ignorar carpeta models/
+models/
+
+# Ignorar otros formatos de modelo en cualquier lugar
 *.h5
 *.onnx
 *.tflite
@@ -169,5 +172,3 @@ $RECYCLE.BIN/
 # Linux
 *~
 .directory
-
-
